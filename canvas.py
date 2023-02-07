@@ -11,8 +11,7 @@ def listOfClasses():
     for item in response.json():
         for key in item:
             if (key == 'name'):
-                print(item['name'] + '\t' +  str(item['id']))
-
+                print("%-50s %4.1d" % (item['name'], item['id'])) # This is just some formatting I found online
 
 def test():
         response = requests.get(API_URL + '/api/v1/courses/1424216/permissions?access_token=' + API_KEY)
