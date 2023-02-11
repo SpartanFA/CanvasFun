@@ -2,6 +2,7 @@
 
 # Python Packages:
 pip install python-decouple
+
 pip install requests
 
 # Adding Your API Key
